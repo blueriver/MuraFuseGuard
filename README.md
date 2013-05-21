@@ -10,6 +10,14 @@ Adobe ColdFusion 9 or 10
 Railo 3 and up
 Mura Core Version 6.0.5345 and up
 
-This plugin connects a Mura to an existing FuseGuard instance. So you must first configure FuseGuard on your webserver before using this plugin. For more details please visit the following URL:
+This plugin connects a Mura to an existing FuseGuard instance. So you must first configure FuseGuard on your webserver before using this plugin. To do this:
+
+1. You must purchase FuseGuard.
+2. Place the fuseguard package in your web root.
+3. Configure FuseGuard to use the same datasource as Mura.
+4. Install this plugin and tell the plugin what configurator to use and where the manager is.
+
+
+For more details please visit the following URL:
 
 http://foundeo.com/security/
