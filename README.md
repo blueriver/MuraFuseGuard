@@ -15,7 +15,7 @@ This plugin connects a Mura to an existing FuseGuard instance. So you must first
 1. You must purchase FuseGuard.
 2. Place the fuseguard package in your web root.
 3. Configure FuseGuard to use the same datasource as Mura.
-4. Install this plugin and tell the plugin what configurator to use and where the manager is.
+4. Install this plugin.
 
 
 For more details please visit the following URL:
