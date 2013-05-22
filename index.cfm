@@ -13,15 +13,16 @@
    See the License for the specific language governing permissions and
    limitations under the License.
 --->
+<cfscript>
+   $=application.serviceFactory.getBean('$');
+   pluginConfig=$.getBean('pluginManager').getConfig('MuraFuseGuard');
 
-<cfset $=application.serviceFactory.getBean('$')>
-<cfset pluginConfig=$.getBean('pluginManager').getConfig('MuraFuseGuard')>
+   if(not structKeyExists(session,"siteID") or not $.getBean('permUtility').getModulePerm(pluginConfig.getValue('moduleID'),session.siteID)){
+      location(url="#$.globalConfig('context')#/admin/", addtoken="false");
+   }
 
-<cfif not structKeyExists(session,"siteID") or not application.permUtility.getModulePerm(pluginConfig.getValue('moduleID'),session.siteID)>
-   <cflocation url="#application.configBean.getContext()#/admin/" addtoken="false">
-</cfif>
-
-<cfset $.init(session.siteID)>
+   $.init(session.siteID);
+</cfscript>
 
 <cfsavecontent variable="body">
    <cfoutput>
