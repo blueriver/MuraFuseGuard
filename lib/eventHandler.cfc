@@ -19,7 +19,7 @@ component extends="mura.plugin.pluginGenericEventHandler" output="false" {
 	variables.missingLib=false;
 
 	function onApplicationLoad($){
-
+		variables.configurator = variables.pluginConfig.getSetting("configurator");
 		initFuseguard();
 		variables.pluginConfig.addEventHandler(this);
 		
