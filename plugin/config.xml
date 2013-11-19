@@ -18,7 +18,7 @@
 <package>MuraFuseGuard</package>
 <createmapping>true</createmapping>
 <directoryFormat>packageOnly</directoryFormat>
-<version>0</version>
+<version>1.0</version>
 <loadPriority>1</loadPriority>
 <provider>Blue River / Foundeo</provider>
 <providerURL>http://foundeo.com/security/</providerURL>
